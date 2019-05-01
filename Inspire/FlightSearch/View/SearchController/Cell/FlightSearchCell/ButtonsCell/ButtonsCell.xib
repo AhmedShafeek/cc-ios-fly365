@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="158" id="KGk-i7-Jjw" customClass="ButtonsCell" customModule="Inspire" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="507" height="158"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="507" height="157.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9j7-mp-IDw">
+                        <rect key="frame" x="0.0" y="20" width="507" height="118"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uwk-WX-tW7" customClass="MyButton" customModule="Inspire" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="507" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="Giu-1q-KXR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="Add trip">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="radiusBorder" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="gradientBackground" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedText" value="add_trip"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pQw-cw-xsI" customClass="MyButton" customModule="Inspire" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="49" width="507" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="f3Q-zu-tbf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="Search">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="radiusBorder" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="gradientBackground" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedText" value="search"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="uwk-WX-tW7" firstAttribute="top" secondItem="9j7-mp-IDw" secondAttribute="top" id="2G8-MI-rj6"/>
+                            <constraint firstAttribute="trailing" secondItem="pQw-cw-xsI" secondAttribute="trailing" id="IGC-kq-CxK"/>
+                            <constraint firstAttribute="bottom" secondItem="pQw-cw-xsI" secondAttribute="bottom" constant="30" id="Ju8-Lo-aeJ"/>
+                            <constraint firstItem="pQw-cw-xsI" firstAttribute="top" secondItem="uwk-WX-tW7" secondAttribute="bottom" constant="10" id="NRh-Mq-AaG"/>
+                            <constraint firstItem="pQw-cw-xsI" firstAttribute="leading" secondItem="9j7-mp-IDw" secondAttribute="leading" id="SqP-p9-EFA"/>
+                            <constraint firstItem="uwk-WX-tW7" firstAttribute="leading" secondItem="9j7-mp-IDw" secondAttribute="leading" id="Wav-fd-M39"/>
+                            <constraint firstAttribute="trailing" secondItem="uwk-WX-tW7" secondAttribute="trailing" id="aeF-Nb-pPY"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="9j7-mp-IDw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="UWw-GX-T42"/>
+                    <constraint firstItem="9j7-mp-IDw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="i5F-CC-MV5"/>
+                    <constraint firstAttribute="trailing" secondItem="9j7-mp-IDw" secondAttribute="trailing" id="sTF-Fc-jFC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="addTripButton" destination="uwk-WX-tW7" id="QP2-85-Ye5"/>
+                <outlet property="addTripHeightConstraint" destination="Giu-1q-KXR" id="RTQ-hS-ePt"/>
+                <outlet property="searchButton" destination="pQw-cw-xsI" id="gwD-Rg-V92"/>
+            </connections>
+            <point key="canvasLocation" x="69.599999999999994" y="92.653673163418304"/>
+        </tableViewCell>
+    </objects>
+</document>

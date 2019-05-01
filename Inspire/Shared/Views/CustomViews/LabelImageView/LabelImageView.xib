@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LabelImageView" customModule="Inspire" customModuleProvider="target">
+            <connections>
+                <outlet property="bgView" destination="bdv-P3-XE0" id="eSp-X3-HCe"/>
+                <outlet property="imageView" destination="83J-b8-Odo" id="vV0-bN-GzX"/>
+                <outlet property="label" destination="TsV-Im-ahW" id="uai-UL-aaI"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="58"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bdv-P3-XE0" customClass="MyView" customModule="Inspire" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="58"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shafeek" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TsV-Im-ahW" customClass="MyLabel" customModule="Inspire" customModuleProvider="target">
+                            <rect key="frame" x="30" y="20.5" width="276.5" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.13725490196078433" green="0.12156862745098039" blue="0.12549019607843137" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                    <color key="value" red="0.13725490200000001" green="0.1215686275" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="departure_flight" translatesAutoresizingMaskIntoConstraints="NO" id="83J-b8-Odo" customClass="MyImageView" customModule="Inspire" customModuleProvider="target">
+                            <rect key="frame" x="332.5" y="23" width="12.5" height="12.5"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.78823529410000004" green="0.78823529410000004" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="TsV-Im-ahW" firstAttribute="centerY" secondItem="bdv-P3-XE0" secondAttribute="centerY" id="HFu-bY-iJ9"/>
+                        <constraint firstItem="TsV-Im-ahW" firstAttribute="leading" secondItem="bdv-P3-XE0" secondAttribute="leading" constant="30" id="XZW-uR-GX6"/>
+                        <constraint firstItem="TsV-Im-ahW" firstAttribute="width" secondItem="bdv-P3-XE0" secondAttribute="width" multiplier="14/19" id="dhr-Pq-mTs"/>
+                        <constraint firstItem="83J-b8-Odo" firstAttribute="centerY" secondItem="bdv-P3-XE0" secondAttribute="centerY" id="mO9-vp-0fJ"/>
+                        <constraint firstAttribute="trailing" secondItem="83J-b8-Odo" secondAttribute="trailing" constant="30" id="o5v-nK-b4T"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="color">
+                            <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="radiusBorder" value="YES"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="bdv-P3-XE0" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="4Io-TA-qnE"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="bdv-P3-XE0" secondAttribute="bottom" id="FX8-gJ-pUZ"/>
+                <constraint firstItem="bdv-P3-XE0" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="cOJ-7E-EZ1"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="bdv-P3-XE0" secondAttribute="trailing" id="fcg-yj-JTV"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="128.80000000000001" y="-335.5322338830585"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="departure_flight" width="12.5" height="12.5"/>
+    </resources>
+</document>

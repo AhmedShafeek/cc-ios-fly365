@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DatePickerDialog" customModule="Inspire" customModuleProvider="target">
+            <connections>
+                <outlet property="bgView" destination="sKh-OM-eFX" id="8We-EV-yJF"/>
+                <outlet property="datePicker" destination="0HD-Ac-Cjx" id="fhF-MV-aCZ"/>
+                <outlet property="view" destination="p5w-Kj-UlT" id="iLN-gN-OhG"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="p5w-Kj-UlT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sKh-OM-eFX">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MHs-fL-cVG" customClass="MyView" customModule="Inspire" customModuleProvider="target">
+                            <rect key="frame" x="19" y="200" width="337.5" height="267"/>
+                            <subviews>
+                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="0HD-Ac-Cjx">
+                                    <rect key="frame" x="0.0" y="0.0" width="337.5" height="210"/>
+                                    <date key="date" timeIntervalSinceReferenceDate="569230363.11509204">
+                                        <!--2019-01-15 07:32:43 +0000-->
+                                    </date>
+                                </datePicker>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rI8-w3-Nsz">
+                                    <rect key="frame" x="0.0" y="209" width="337.5" height="1"/>
+                                    <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="Iph-19-2P7"/>
+                                    </constraints>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="djT-r7-inQ" customClass="MyButton" customModule="Inspire" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="220" width="337.5" height="37"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="37" id="VXz-j2-NWk"/>
+                                    </constraints>
+                                    <state key="normal" title="Choose"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="radiusBorder" value="NO"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="gradientBackground" value="NO"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="chooseAction:" destination="-1" eventType="touchUpInside" id="y3U-0a-OBJ"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="0HD-Ac-Cjx" secondAttribute="trailing" id="3Vf-7j-UgA"/>
+                                <constraint firstItem="djT-r7-inQ" firstAttribute="centerX" secondItem="MHs-fL-cVG" secondAttribute="centerX" id="5Ho-pj-eNw"/>
+                                <constraint firstItem="djT-r7-inQ" firstAttribute="leading" secondItem="MHs-fL-cVG" secondAttribute="leading" id="DAq-gQ-sb5"/>
+                                <constraint firstItem="0HD-Ac-Cjx" firstAttribute="top" secondItem="MHs-fL-cVG" secondAttribute="top" id="Dgp-T3-oYf"/>
+                                <constraint firstAttribute="trailing" secondItem="rI8-w3-Nsz" secondAttribute="trailing" id="FLt-vo-Yjd"/>
+                                <constraint firstAttribute="trailing" secondItem="djT-r7-inQ" secondAttribute="trailing" id="cQG-Mh-IEg"/>
+                                <constraint firstItem="djT-r7-inQ" firstAttribute="top" secondItem="rI8-w3-Nsz" secondAttribute="bottom" constant="10" id="cbZ-Iy-hQE"/>
+                                <constraint firstItem="rI8-w3-Nsz" firstAttribute="leading" secondItem="MHs-fL-cVG" secondAttribute="leading" id="kOT-rE-db2"/>
+                                <constraint firstAttribute="bottom" secondItem="djT-r7-inQ" secondAttribute="bottom" constant="10" id="qAL-wf-NFu"/>
+                                <constraint firstItem="0HD-Ac-Cjx" firstAttribute="leading" secondItem="MHs-fL-cVG" secondAttribute="leading" id="vzB-xx-8ea"/>
+                                <constraint firstItem="djT-r7-inQ" firstAttribute="top" secondItem="0HD-Ac-Cjx" secondAttribute="bottom" constant="10" id="wyY-S3-0z2"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                    <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.14768835616438356" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="MHs-fL-cVG" firstAttribute="height" secondItem="sKh-OM-eFX" secondAttribute="height" multiplier="2/5" id="4Fe-pW-pvU"/>
+                        <constraint firstItem="MHs-fL-cVG" firstAttribute="width" secondItem="sKh-OM-eFX" secondAttribute="width" multiplier="9/10" id="5JT-2A-LZW"/>
+                        <constraint firstItem="MHs-fL-cVG" firstAttribute="centerX" secondItem="sKh-OM-eFX" secondAttribute="centerX" id="B3G-te-NZ9"/>
+                        <constraint firstItem="MHs-fL-cVG" firstAttribute="centerY" secondItem="sKh-OM-eFX" secondAttribute="centerY" id="BmB-Kp-d4N"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="sKh-OM-eFX" firstAttribute="bottom" secondItem="ds7-a0-o6t" secondAttribute="bottom" id="0c6-9H-eWM"/>
+                <constraint firstItem="sKh-OM-eFX" firstAttribute="leading" secondItem="ds7-a0-o6t" secondAttribute="leading" id="Bbv-Q6-ci1"/>
+                <constraint firstItem="sKh-OM-eFX" firstAttribute="trailing" secondItem="ds7-a0-o6t" secondAttribute="trailing" id="nuW-gH-oWs"/>
+                <constraint firstItem="sKh-OM-eFX" firstAttribute="top" secondItem="p5w-Kj-UlT" secondAttribute="top" id="rba-rh-GI9"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ds7-a0-o6t"/>
+            <point key="canvasLocation" x="1210" y="376"/>
+        </view>
+    </objects>
+</document>

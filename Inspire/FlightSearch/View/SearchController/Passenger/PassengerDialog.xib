@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PassengerDialog" customModule="Inspire" customModuleProvider="target">
+            <connections>
+                <outlet property="adultsAddIV" destination="27v-tl-gml" id="r0c-p1-wyE"/>
+                <outlet property="adultsLabel" destination="103-aM-NeP" id="vOf-cu-wLa"/>
+                <outlet property="adultsMinIV" destination="Dmf-Na-hTp" id="IVH-pV-4eQ"/>
+                <outlet property="bgView" destination="gtQ-0Y-k00" id="RHw-5W-kqM"/>
+                <outlet property="childrenAddIV" destination="hY2-sb-UMH" id="MCQ-B4-pAx"/>
+                <outlet property="childrenLabel" destination="oD5-UO-xrT" id="5hW-Pp-RUJ"/>
+                <outlet property="childrenMinIV" destination="jgo-WS-bWH" id="0JI-hr-12T"/>
+                <outlet property="lapInfantsAddIV" destination="2aV-Qj-Qoh" id="vuh-b2-ZKi"/>
+                <outlet property="lapInfantsLabel" destination="AQM-Oq-gSy" id="Hhh-GF-C2t"/>
+                <outlet property="lapInfantsMinIV" destination="8sM-cv-fdL" id="hTT-JX-1xd"/>
+                <outlet property="view" destination="iN0-l3-epB" id="hBp-cU-RiS"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gtQ-0Y-k00">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.14621682363013699" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fRN-Um-ePi" customClass="MyView" customModule="Inspire" customModuleProvider="target">
+                    <rect key="frame" x="19" y="251" width="337.5" height="165"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="42m-aN-Bsj">
+                            <rect key="frame" x="0.0" y="0.0" width="337.5" height="55"/>
+                            <subviews>
+                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="min" translatesAutoresizingMaskIntoConstraints="NO" id="Dmf-Na-hTp" customClass="MyImageView" customModule="Inspire" customModuleProvider="target">
+                                    <rect key="frame" x="35" y="9.5" width="36" height="36"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 Adults" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="103-aM-NeP" customClass="MyLabel" customModule="Inspire" customModuleProvider="target">
+                                    <rect key="frame" x="143" y="19" width="51" height="17"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plus" translatesAutoresizingMaskIntoConstraints="NO" id="27v-tl-gml" customClass="MyImageView" customModule="Inspire" customModuleProvider="target">
+                                    <rect key="frame" x="266.5" y="9.5" width="36" height="36"/>
+                                </imageView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iEm-50-kJs">
+                                    <rect key="frame" x="0.0" y="54" width="337.5" height="1"/>
+                                    <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="fpj-vs-qbO"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="Dmf-Na-hTp" firstAttribute="leading" secondItem="42m-aN-Bsj" secondAttribute="leading" constant="35" id="6vK-NC-kf1"/>
+                                <constraint firstItem="Dmf-Na-hTp" firstAttribute="centerY" secondItem="42m-aN-Bsj" secondAttribute="centerY" id="8hY-cI-xin"/>
+                                <constraint firstItem="103-aM-NeP" firstAttribute="centerX" secondItem="42m-aN-Bsj" secondAttribute="centerX" id="CTe-GJ-8mt"/>
+                                <constraint firstAttribute="bottom" secondItem="iEm-50-kJs" secondAttribute="bottom" id="Gau-X9-ruw"/>
+                                <constraint firstItem="103-aM-NeP" firstAttribute="centerY" secondItem="42m-aN-Bsj" secondAttribute="centerY" id="aly-6N-Dwv"/>
+                                <constraint firstAttribute="height" constant="55" id="nt8-uJ-UAS"/>
+                                <constraint firstAttribute="trailing" secondItem="27v-tl-gml" secondAttribute="trailing" constant="35" id="sfF-20-hvc"/>
+                                <constraint firstItem="iEm-50-kJs" firstAttribute="leading" secondItem="42m-aN-Bsj" secondAttribute="leading" id="um7-Ld-Wge"/>
+                                <constraint firstAttribute="trailing" secondItem="iEm-50-kJs" secondAttribute="trailing" id="woK-ba-dy1"/>
+                                <constraint firstItem="27v-tl-gml" firstAttribute="centerY" secondItem="42m-aN-Bsj" secondAttribute="centerY" id="zwc-E0-XDk"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vTc-X7-KWa">
+                            <rect key="frame" x="0.0" y="55" width="337.5" height="55"/>
+                            <subviews>
+                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="min" translatesAutoresizingMaskIntoConstraints="NO" id="jgo-WS-bWH" customClass="MyImageView" customModule="Inspire" customModuleProvider="target">
+                                    <rect key="frame" x="35" y="9.5" width="36" height="36"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 Children" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oD5-UO-xrT" customClass="MyLabel" customModule="Inspire" customModuleProvider="target">
+                                    <rect key="frame" x="135.5" y="19" width="66.5" height="17"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2-12 years old" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LVh-bL-cYe">
+                                    <rect key="frame" x="131" y="36" width="75" height="13.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                    <color key="textColor" red="0.50196078431372548" green="0.50588235294117645" blue="0.51764705882352935" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plus" translatesAutoresizingMaskIntoConstraints="NO" id="hY2-sb-UMH" customClass="MyImageView" customModule="Inspire" customModuleProvider="target">
+                                    <rect key="frame" x="266.5" y="9.5" width="36" height="36"/>
+                                </imageView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eT2-tr-k3c">
+                                    <rect key="frame" x="0.0" y="54" width="337.5" height="1"/>
+                                    <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="YXM-ld-x4h"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="jgo-WS-bWH" firstAttribute="leading" secondItem="vTc-X7-KWa" secondAttribute="leading" constant="35" id="4EN-xz-8Yx"/>
+                                <constraint firstAttribute="bottom" secondItem="eT2-tr-k3c" secondAttribute="bottom" id="6p8-Zi-e6Y"/>
+                                <constraint firstAttribute="trailing" secondItem="hY2-sb-UMH" secondAttribute="trailing" constant="35" id="7fN-98-lob"/>
+                                <constraint firstAttribute="height" constant="55" id="8dz-cS-lIe"/>
+                                <constraint firstItem="LVh-bL-cYe" firstAttribute="centerX" secondItem="vTc-X7-KWa" secondAttribute="centerX" id="JQH-Wg-Vh3"/>
+                                <constraint firstItem="LVh-bL-cYe" firstAttribute="top" secondItem="oD5-UO-xrT" secondAttribute="bottom" id="Pr1-9m-XQc"/>
+                                <constraint firstItem="eT2-tr-k3c" firstAttribute="leading" secondItem="vTc-X7-KWa" secondAttribute="leading" id="ViG-vx-R7C"/>
+                                <constraint firstItem="oD5-UO-xrT" firstAttribute="centerX" secondItem="vTc-X7-KWa" secondAttribute="centerX" id="WjY-NR-BcB"/>
+                                <constraint firstItem="hY2-sb-UMH" firstAttribute="centerY" secondItem="vTc-X7-KWa" secondAttribute="centerY" id="Ykr-0f-axV"/>
+                                <constraint firstItem="oD5-UO-xrT" firstAttribute="centerY" secondItem="vTc-X7-KWa" secondAttribute="centerY" id="efQ-C8-fkU"/>
+                                <constraint firstAttribute="trailing" secondItem="eT2-tr-k3c" secondAttribute="trailing" id="x5K-PY-Vco"/>
+                                <constraint firstItem="jgo-WS-bWH" firstAttribute="centerY" secondItem="vTc-X7-KWa" secondAttribute="centerY" id="yv6-wy-on6"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YyP-Pw-aKS">
+                            <rect key="frame" x="0.0" y="110" width="337.5" height="55"/>
+                            <subviews>
+                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="min" translatesAutoresizingMaskIntoConstraints="NO" id="8sM-cv-fdL" customClass="MyImageView" customModule="Inspire" customModuleProvider="target">
+                                    <rect key="frame" x="35" y="9.5" width="36" height="36"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 Lap Infants" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AQM-Oq-gSy" customClass="MyLabel" customModule="Inspire" customModuleProvider="target">
+                                    <rect key="frame" x="126.5" y="19" width="84" height="17"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0-2 years old" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EqH-yj-Rw0">
+                                    <rect key="frame" x="133.5" y="36" width="70" height="13.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                    <color key="textColor" red="0.50196078430000002" green="0.50588235290000005" blue="0.51764705879999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plus" translatesAutoresizingMaskIntoConstraints="NO" id="2aV-Qj-Qoh" customClass="MyImageView" customModule="Inspire" customModuleProvider="target">
+                                    <rect key="frame" x="266.5" y="9.5" width="36" height="36"/>
+                                </imageView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="8sM-cv-fdL" firstAttribute="leading" secondItem="YyP-Pw-aKS" secondAttribute="leading" constant="35" id="E1n-cV-FuN"/>
+                                <constraint firstItem="2aV-Qj-Qoh" firstAttribute="centerY" secondItem="YyP-Pw-aKS" secondAttribute="centerY" id="GvN-wy-srO"/>
+                                <constraint firstItem="AQM-Oq-gSy" firstAttribute="centerY" secondItem="YyP-Pw-aKS" secondAttribute="centerY" id="IPF-mz-eug"/>
+                                <constraint firstAttribute="height" constant="55" id="UMc-h8-gOT"/>
+                                <constraint firstItem="AQM-Oq-gSy" firstAttribute="centerX" secondItem="YyP-Pw-aKS" secondAttribute="centerX" id="a7O-ei-Ppk"/>
+                                <constraint firstItem="EqH-yj-Rw0" firstAttribute="centerX" secondItem="YyP-Pw-aKS" secondAttribute="centerX" id="cho-co-uyT"/>
+                                <constraint firstItem="8sM-cv-fdL" firstAttribute="centerY" secondItem="YyP-Pw-aKS" secondAttribute="centerY" id="tNF-bb-1zH"/>
+                                <constraint firstItem="EqH-yj-Rw0" firstAttribute="top" secondItem="AQM-Oq-gSy" secondAttribute="bottom" id="wBC-5c-8aJ"/>
+                                <constraint firstAttribute="trailing" secondItem="2aV-Qj-Qoh" secondAttribute="trailing" constant="35" id="xAy-Ug-K5Y"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="YyP-Pw-aKS" secondAttribute="trailing" id="3M4-pF-iWc"/>
+                        <constraint firstAttribute="bottom" secondItem="YyP-Pw-aKS" secondAttribute="bottom" id="4aE-CZ-hbf"/>
+                        <constraint firstItem="YyP-Pw-aKS" firstAttribute="leading" secondItem="fRN-Um-ePi" secondAttribute="leading" id="7x8-wq-vcx"/>
+                        <constraint firstAttribute="trailing" secondItem="42m-aN-Bsj" secondAttribute="trailing" id="DeU-o7-6hC"/>
+                        <constraint firstItem="42m-aN-Bsj" firstAttribute="top" secondItem="fRN-Um-ePi" secondAttribute="top" id="Jpk-Kh-qKI"/>
+                        <constraint firstItem="vTc-X7-KWa" firstAttribute="leading" secondItem="fRN-Um-ePi" secondAttribute="leading" id="Q40-Yh-1BX"/>
+                        <constraint firstAttribute="trailing" secondItem="vTc-X7-KWa" secondAttribute="trailing" id="fAb-5W-eyJ"/>
+                        <constraint firstItem="YyP-Pw-aKS" firstAttribute="top" secondItem="vTc-X7-KWa" secondAttribute="bottom" id="gly-Dn-4e6"/>
+                        <constraint firstItem="42m-aN-Bsj" firstAttribute="leading" secondItem="fRN-Um-ePi" secondAttribute="leading" id="r7q-Iz-vhi"/>
+                        <constraint firstItem="vTc-X7-KWa" firstAttribute="top" secondItem="42m-aN-Bsj" secondAttribute="bottom" id="vft-5K-3OM"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="color">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="gtQ-0Y-k00" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="5tl-Uy-Dut"/>
+                <constraint firstItem="fRN-Um-ePi" firstAttribute="centerY" secondItem="gtQ-0Y-k00" secondAttribute="centerY" id="CxA-EM-GJN"/>
+                <constraint firstItem="fRN-Um-ePi" firstAttribute="width" secondItem="gtQ-0Y-k00" secondAttribute="width" multiplier="9/10" id="HMd-pi-87X"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="gtQ-0Y-k00" secondAttribute="trailing" id="L5x-Vo-N0b"/>
+                <constraint firstItem="fRN-Um-ePi" firstAttribute="centerX" secondItem="gtQ-0Y-k00" secondAttribute="centerX" id="aiw-8u-3M6"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="gtQ-0Y-k00" secondAttribute="bottom" id="dCv-Zw-F7c"/>
+                <constraint firstItem="gtQ-0Y-k00" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="oI4-Rp-Ecz"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="53.600000000000001" y="48.125937031484263"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="min" width="36" height="36"/>
+        <image name="plus" width="36" height="36"/>
+    </resources>
+</document>

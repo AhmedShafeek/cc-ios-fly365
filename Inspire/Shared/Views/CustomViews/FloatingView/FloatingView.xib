@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FloatingView">
+            <connections>
+                <outlet property="bgView" destination="1LB-8b-70E" id="U3p-Ev-uvl"/>
+                <outlet property="imageView" destination="9da-HP-txX" id="Qr0-u9-yJ6"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="55" height="55"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1LB-8b-70E">
+                    <rect key="frame" x="0.0" y="0.0" width="55" height="55"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0Eg-eV-azU" customClass="MyImageView" customModule="Inspire" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="55" height="55"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="55" id="i6k-d0-DOb"/>
+                                <constraint firstAttribute="height" constant="55" id="jwL-ds-Ho7"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="defultColor" value="YES"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="imageCircle" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="filter" translatesAutoresizingMaskIntoConstraints="NO" id="9da-HP-txX" customClass="MyImageView" customModule="Inspire" customModuleProvider="target">
+                            <rect key="frame" x="20.5" y="20.5" width="14" height="14"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                    <color key="value" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="0Eg-eV-azU" firstAttribute="centerX" secondItem="1LB-8b-70E" secondAttribute="centerX" id="FVB-ea-nUz"/>
+                        <constraint firstItem="0Eg-eV-azU" firstAttribute="centerY" secondItem="1LB-8b-70E" secondAttribute="centerY" id="yGX-l3-B0L"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="1LB-8b-70E" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Dil-aI-0Qp"/>
+                <constraint firstItem="1LB-8b-70E" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="GOG-ts-ROH"/>
+                <constraint firstItem="1LB-8b-70E" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="df4-iK-GwG"/>
+                <constraint firstItem="1LB-8b-70E" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="e2m-wA-ejR"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-192" y="-227.58620689655174"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="filter" width="14" height="14"/>
+    </resources>
+</document>

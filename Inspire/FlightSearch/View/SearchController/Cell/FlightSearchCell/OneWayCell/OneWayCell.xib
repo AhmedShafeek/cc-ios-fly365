@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="OneWayCell" customModule="Inspire" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rvu-cP-aoU" customClass="MyView" customModule="Inspire" customModuleProvider="target">
+                        <rect key="frame" x="5" y="5" width="310" height="33.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xk4-UH-vSi" customClass="LabelImageView" customModule="Inspire" customModuleProvider="target">
+                                <rect key="frame" x="15" y="15" width="280" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="tUX-dV-QjH"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="labelText" value="Departure"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="departure_flight"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="imageIcon" value="departure_flight"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YeK-YQ-FZs" customClass="LabelImageView" customModule="Inspire" customModuleProvider="target">
+                                <rect key="frame" x="15" y="67" width="280" height="37"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="labelText" value="Arrival"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="arrival_flight"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="imageIcon" value="arrival_flight"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fhq-AW-gVp" customClass="LabelImageView" customModule="Inspire" customModuleProvider="target">
+                                <rect key="frame" x="15" y="119" width="280" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="zBE-Dh-dV0"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="labelText" value="Passengers"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="imageIcon" value="bottom_arrow"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zi2-87-oiK" customClass="LabelImageView" customModule="Inspire" customModuleProvider="target">
+                                <rect key="frame" x="15" y="171" width="280" height="37"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="labelText" value="Departure Date"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="calendar"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="imageIcon" value="calendar"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AqP-9H-T18" customClass="LabelImageView" customModule="Inspire" customModuleProvider="target">
+                                <rect key="frame" x="15" y="223" width="280" height="37"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="labelText" value="Cabin Class"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="imageIcon" value="bottom_arrow"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ibo-xf-TaG" customClass="CheckBoxView" customModule="Inspire" customModuleProvider="target">
+                                <rect key="frame" x="15" y="275" width="280" height="37"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="labelText" value="flexible_dates"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hVc-Oy-eOB" customClass="CheckBoxView" customModule="Inspire" customModuleProvider="target">
+                                <rect key="frame" x="15" y="312" width="280" height="37"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="labelText" value="direct_flights"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="hVc-Oy-eOB" firstAttribute="height" secondItem="xk4-UH-vSi" secondAttribute="height" id="0UV-pv-BAH"/>
+                            <constraint firstItem="AqP-9H-T18" firstAttribute="height" secondItem="xk4-UH-vSi" secondAttribute="height" id="1dF-MM-Nip"/>
+                            <constraint firstAttribute="trailing" secondItem="AqP-9H-T18" secondAttribute="trailing" constant="15" id="3x1-cW-SLN"/>
+                            <constraint firstItem="hVc-Oy-eOB" firstAttribute="leading" secondItem="rvu-cP-aoU" secondAttribute="leading" constant="15" id="8eD-W8-vfL"/>
+                            <constraint firstItem="YeK-YQ-FZs" firstAttribute="height" secondItem="xk4-UH-vSi" secondAttribute="height" id="Bgu-T5-V8r"/>
+                            <constraint firstItem="AqP-9H-T18" firstAttribute="leading" secondItem="rvu-cP-aoU" secondAttribute="leading" constant="15" id="HFq-zC-rxP"/>
+                            <constraint firstItem="ibo-xf-TaG" firstAttribute="leading" secondItem="rvu-cP-aoU" secondAttribute="leading" constant="15" id="HJb-zp-E4p"/>
+                            <constraint firstItem="YeK-YQ-FZs" firstAttribute="leading" secondItem="rvu-cP-aoU" secondAttribute="leading" constant="15" id="IVm-DF-mcA"/>
+                            <constraint firstItem="ibo-xf-TaG" firstAttribute="top" secondItem="AqP-9H-T18" secondAttribute="bottom" constant="15" id="Jin-9C-yoy"/>
+                            <constraint firstItem="xk4-UH-vSi" firstAttribute="leading" secondItem="rvu-cP-aoU" secondAttribute="leading" constant="15" id="KQ4-fN-ifP"/>
+                            <constraint firstAttribute="trailing" secondItem="YeK-YQ-FZs" secondAttribute="trailing" constant="15" id="Ljh-nr-Cpd"/>
+                            <constraint firstItem="hVc-Oy-eOB" firstAttribute="top" secondItem="ibo-xf-TaG" secondAttribute="bottom" id="SAx-gO-QPG"/>
+                            <constraint firstItem="Zi2-87-oiK" firstAttribute="leading" secondItem="rvu-cP-aoU" secondAttribute="leading" constant="15" id="WUL-JU-0Fy"/>
+                            <constraint firstAttribute="trailing" secondItem="Zi2-87-oiK" secondAttribute="trailing" constant="15" id="XHu-r0-MOO"/>
+                            <constraint firstItem="ibo-xf-TaG" firstAttribute="height" secondItem="xk4-UH-vSi" secondAttribute="height" id="XzM-Nt-JQM"/>
+                            <constraint firstItem="AqP-9H-T18" firstAttribute="top" secondItem="Zi2-87-oiK" secondAttribute="bottom" constant="15" id="YRn-sp-De3"/>
+                            <constraint firstItem="fhq-AW-gVp" firstAttribute="leading" secondItem="rvu-cP-aoU" secondAttribute="leading" constant="15" id="Yvy-6s-TNy"/>
+                            <constraint firstItem="Zi2-87-oiK" firstAttribute="top" secondItem="fhq-AW-gVp" secondAttribute="bottom" constant="15" id="bkZ-a8-ZT1"/>
+                            <constraint firstAttribute="trailing" secondItem="ibo-xf-TaG" secondAttribute="trailing" constant="15" id="ca8-Jp-b4W"/>
+                            <constraint firstAttribute="trailing" secondItem="fhq-AW-gVp" secondAttribute="trailing" constant="15" id="e0X-Cs-aij"/>
+                            <constraint firstItem="Zi2-87-oiK" firstAttribute="height" secondItem="xk4-UH-vSi" secondAttribute="height" id="icl-Oh-hOf"/>
+                            <constraint firstItem="fhq-AW-gVp" firstAttribute="top" secondItem="YeK-YQ-FZs" secondAttribute="bottom" constant="15" id="nwk-PA-05U"/>
+                            <constraint firstItem="YeK-YQ-FZs" firstAttribute="top" secondItem="xk4-UH-vSi" secondAttribute="bottom" constant="15" id="oSe-ra-pdf"/>
+                            <constraint firstAttribute="trailing" secondItem="hVc-Oy-eOB" secondAttribute="trailing" constant="15" id="qKa-nq-acB"/>
+                            <constraint firstItem="xk4-UH-vSi" firstAttribute="top" secondItem="rvu-cP-aoU" secondAttribute="top" constant="15" id="r6b-X4-z7b"/>
+                            <constraint firstAttribute="trailing" secondItem="xk4-UH-vSi" secondAttribute="trailing" constant="15" id="wpX-zJ-uyI"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="radiusBorder" value="NO"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="shadow" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="rvu-cP-aoU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="9vt-Bl-vxw"/>
+                    <constraint firstAttribute="trailing" secondItem="rvu-cP-aoU" secondAttribute="trailing" constant="5" id="Uj4-Z3-LOq"/>
+                    <constraint firstItem="rvu-cP-aoU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="lcW-ny-NiF"/>
+                    <constraint firstAttribute="bottom" secondItem="rvu-cP-aoU" secondAttribute="bottom" constant="5" id="qmX-mx-YqD"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="arrivalView" destination="YeK-YQ-FZs" id="aAl-yv-PDH"/>
+                <outlet property="cabinClassView" destination="AqP-9H-T18" id="nEd-2c-qMs"/>
+                <outlet property="departureDateView" destination="Zi2-87-oiK" id="Lcw-Mx-jnh"/>
+                <outlet property="departureView" destination="xk4-UH-vSi" id="4ce-UQ-e1g"/>
+                <outlet property="directFlightsCB" destination="hVc-Oy-eOB" id="6B0-bI-stL"/>
+                <outlet property="flexibleDatesCB" destination="ibo-xf-TaG" id="nnq-KV-5cW"/>
+                <outlet property="passengersView" destination="fhq-AW-gVp" id="qgn-Ve-HKZ"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrival_flight" width="12.5" height="12.5"/>
+        <image name="bottom_arrow" width="18" height="18"/>
+        <image name="calendar" width="11.5" height="12.5"/>
+        <image name="departure_flight" width="12.5" height="12.5"/>
+    </resources>
+</document>

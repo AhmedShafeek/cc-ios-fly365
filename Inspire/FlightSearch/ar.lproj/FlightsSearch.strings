@@ -1,0 +1,116 @@
+
+/* Class = "UILabel"; text = "Includes taxes and fees "; ObjectID = "004-xm-h5S"; */
+"004-xm-h5S.text" = "يشمل الضرائب والرسوم";
+
+"DR6-Pq-boF.labelHint" = "جرب اسم المدينة أو البلد أو المطار";
+
+/* Class = "UILabel"; text = "EGP 1000"; ObjectID = "5WD-V8-UeE"; */
+"5WD-V8-UeE.text" = "EGP 1000";
+
+/* Class = "UILabel"; text = "Base fare EGP 515"; ObjectID = "5aq-7P-bXi"; */
+"5aq-7P-bXi.text" = "Base fare EGP 515";
+
+/* Class = "UILabel"; text = "Hours"; ObjectID = "6Al-M3-sTd"; */
+"6Al-M3-sTd.text" = "ساعات";
+
+/* Class = "UILabel"; text = "Airlines"; ObjectID = "6Wu-Ud-6qE"; */
+"6Wu-Ud-6qE.text" = "الخطوط الجوية";
+
+/* Class = "UILabel"; text = "Hours"; ObjectID = "8Bw-mz-CuO"; */
+"8Bw-mz-CuO.text" = "ساعات";
+
+/* Class = "UIViewController"; title = "Book Your Flight"; ObjectID = "8Vs-z1-IVb"; */
+"8Vs-z1-IVb.title" = "Book Your Flight";
+
+/* Class = "UILabel"; text = "x1 Adult Passenger"; ObjectID = "AAT-Mu-O44"; */
+"AAT-Mu-O44.text" = "x1 Adult Passenger";
+
+/* Class = "UILabel"; text = "Current Location"; ObjectID = "BsH-qW-t3n"; */
+"BsH-qW-t3n.text" = "موقعك الحالى";
+
+/* Class = "UILabel"; text = "Base fare EGP 515"; ObjectID = "Duc-8d-EqK"; */
+"Duc-8d-EqK.text" = "Base fare EGP 515";
+
+/* Class = "UILabel"; text = "x1 Adult Passenger"; ObjectID = "H8k-DY-0s7"; */
+"H8k-DY-0s7.text" = "x1 Adult Passenger";
+
+/* Class = "UILabel"; text = "Plane Types"; ObjectID = "J75-Lx-QLw"; */
+"J75-Lx-QLw.text" = "Plane Types";
+
+/* Class = "UILabel"; text = "EGP 815.5"; ObjectID = "JWR-cq-uVS"; */
+"JWR-cq-uVS.text" = "EGP 815.5";
+
+/* Class = "UILabel"; text = "Sort by"; ObjectID = "Jdh-cz-YSc"; */
+"Jdh-cz-YSc.text" = "Sort by";
+
+/* Class = "UILabel"; text = "Fees and taxes EGP 300"; ObjectID = "Oh7-QN-0zd"; */
+"Oh7-QN-0zd.text" = "Fees and taxes EGP 300";
+
+/* Class = "UILabel"; text = "Base fare EGP 515"; ObjectID = "P6W-gj-MKQ"; */
+"P6W-gj-MKQ.text" = "Base fare EGP 515";
+
+/* Class = "UILabel"; text = "Trip total"; ObjectID = "PEJ-2M-zr0"; */
+"PEJ-2M-zr0.text" = "Trip total";
+
+/* Class = "UILabel"; text = "Sorry, we found no results for \nthis search."; ObjectID = "RnE-23-GDI"; */
+"RnE-23-GDI.text" = "Sorry, we found no results for \nthis search.";
+
+/* Class = "UIButton"; normalTitle = "Arrival Time"; ObjectID = "S4W-jo-Ffs"; */
+"S4W-jo-Ffs.normalTitle" = "Arrival Time";
+
+/* Class = "UIButton"; normalTitle = "Checkout"; ObjectID = "SbG-1V-HgI"; */
+"SbG-1V-HgI.normalTitle" = "Checkout";
+
+/* Class = "UILabel"; text = "Number of Stops"; ObjectID = "Ttw-bi-AyI"; */
+"Ttw-bi-AyI.text" = "Number of Stops";
+
+/* Class = "UILabel"; text = "EGP 815.5"; ObjectID = "U27-nb-04r"; */
+"U27-nb-04r.text" = "EGP 815.5";
+
+/* Class = "UILabel"; text = "EGP 100"; ObjectID = "V8a-NP-dgy"; */
+"V8a-NP-dgy.text" = "EGP 100";
+
+/* Class = "UILabel"; text = "Hours"; ObjectID = "ZAB-tL-fId"; */
+"ZAB-tL-fId.text" = "Hours";
+
+/* Class = "UILabel"; text = "EGP 815.5"; ObjectID = "dIh-hY-74e"; */
+"dIh-hY-74e.text" = "EGP 815.5";
+
+/* Class = "UIButton"; normalTitle = "Departure Time"; ObjectID = "dJM-bh-wp0"; */
+"dJM-bh-wp0.normalTitle" = "Departure Time";
+
+/* Class = "UIButton"; normalTitle = "Duration"; ObjectID = "gwV-as-paO"; */
+"gwV-as-paO.normalTitle" = "Duration";
+
+/* Class = "UIButton"; normalTitle = "Price"; ObjectID = "i7O-40-C93"; */
+"i7O-40-C93.normalTitle" = "Price";
+
+/* Class = "UILabel"; text = "x1 Adult Passenger"; ObjectID = "jc8-im-H3L"; */
+"jc8-im-H3L.text" = "x1 Adult Passenger";
+
+/* Class = "UILabel"; text = "Layover Duration"; ObjectID = "mhj-JQ-K97"; */
+"mhj-JQ-K97.text" = "Layover Duration";
+
+/* Class = "UILabel"; text = "Duration"; ObjectID = "mjx-Op-DsC"; */
+"mjx-Op-DsC.text" = "Duration";
+
+/* Class = "UIButton"; normalTitle = "Clear"; ObjectID = "o7h-2O-arg"; */
+"o7h-2O-arg.normalTitle" = "Clear";
+
+/* Class = "UIButton"; normalTitle = "Apply"; ObjectID = "oKm-uI-y52"; */
+"oKm-uI-y52.normalTitle" = "Apply";
+
+/* Class = "UILabel"; text = "EGP 100,000"; ObjectID = "pNY-Jq-9dd"; */
+"pNY-Jq-9dd.text" = "EGP 100,000";
+
+/* Class = "UILabel"; text = "Price"; ObjectID = "sC7-Hh-v01"; */
+"sC7-Hh-v01.text" = "Price";
+
+/* Class = "UILabel"; text = "Hours"; ObjectID = "sL3-bQ-ddf"; */
+"sL3-bQ-ddf.text" = "Hours";
+
+/* Class = "UILabel"; text = "Fees and taxes EGP 300"; ObjectID = "vVh-BA-AcT"; */
+"vVh-BA-AcT.text" = "Fees and taxes EGP 300";
+
+/* Class = "UILabel"; text = "Fees and taxes EGP 300"; ObjectID = "wqT-KD-4Bh"; */
+"wqT-KD-4Bh.text" = "Fees and taxes EGP 300";

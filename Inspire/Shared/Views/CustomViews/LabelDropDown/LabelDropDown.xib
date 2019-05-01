@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LabelDropDown" customModule="Inspire" customModuleProvider="target">
+            <connections>
+                <outlet property="label" destination="Wc6-c3-Hai" id="Lwu-zv-AiI"/>
+                <outlet property="starLabel" destination="ihF-xy-7Ig" id="lGh-vi-sVf"/>
+                <outlet property="textFieldIV" destination="49l-nl-4pL" id="rTd-qr-dlW"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="148"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uY3-U9-9LT">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="148"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wc6-c3-Hai">
+                            <rect key="frame" x="0.0" y="0.0" width="28.5" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ihF-xy-7Ig">
+                            <rect key="frame" x="33.5" y="0.0" width="6" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.92941176469999998" green="0.10980392160000001" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="49l-nl-4pL" customClass="TextFieldImageView" customModule="Inspire" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="32" width="375" height="116"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="radiusBorder" value="NO"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                    <real key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="0.79215686269999996" green="0.79215686269999996" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                    <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="string" keyPath="labelText" value="Choose"/>
+                                <userDefinedRuntimeAttribute type="image" keyPath="imageIcon" value="bottom_arrow"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="labelHint" value="Choose"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="49l-nl-4pL" firstAttribute="top" secondItem="Wc6-c3-Hai" secondAttribute="bottom" constant="15" id="0IQ-oz-PER"/>
+                        <constraint firstItem="ihF-xy-7Ig" firstAttribute="leading" secondItem="Wc6-c3-Hai" secondAttribute="trailing" constant="5" id="Glf-lw-N4L"/>
+                        <constraint firstAttribute="bottom" secondItem="49l-nl-4pL" secondAttribute="bottom" id="Gyu-0W-KmA"/>
+                        <constraint firstItem="ihF-xy-7Ig" firstAttribute="top" secondItem="uY3-U9-9LT" secondAttribute="top" id="UtA-oC-tgx"/>
+                        <constraint firstItem="Wc6-c3-Hai" firstAttribute="leading" secondItem="uY3-U9-9LT" secondAttribute="leading" id="WKy-DT-qk1"/>
+                        <constraint firstItem="Wc6-c3-Hai" firstAttribute="top" secondItem="uY3-U9-9LT" secondAttribute="top" id="ach-Ml-bKH"/>
+                        <constraint firstAttribute="trailing" secondItem="49l-nl-4pL" secondAttribute="trailing" id="g9e-Vb-FTB"/>
+                        <constraint firstItem="49l-nl-4pL" firstAttribute="leading" secondItem="uY3-U9-9LT" secondAttribute="leading" id="qlu-rx-URS"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="color">
+                            <color key="value" red="0.47843137250000001" green="0.14901960780000001" blue="0.50980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="radiusBorder" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="uY3-U9-9LT" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="A5z-UO-ntA"/>
+                <constraint firstAttribute="bottom" secondItem="uY3-U9-9LT" secondAttribute="bottom" id="gic-4Z-YdL"/>
+                <constraint firstItem="uY3-U9-9LT" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="r3n-Xz-vR8"/>
+                <constraint firstItem="uY3-U9-9LT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="s2A-6N-1Sn"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="138.40000000000001" y="-83.658170914542737"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bottom_arrow" width="36" height="36"/>
+    </resources>
+</document>

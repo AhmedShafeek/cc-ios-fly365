@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sMy-jh-alV">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="duU-qM-HmC">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="sMy-jh-alV" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1c6-0e-kK1">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="6Zl-hR-nU5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nuo-qB-XDW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-938" y="26"/>
+        </scene>
+        <!--Splash View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SplashViewController" customModule="Fly365" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5p4-gu-ta1" customClass="MyView" customModule="Fly365" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="SQ1-OL-ZtP">
+                                        <rect key="frame" x="93.666666666666671" y="376.66666666666669" width="187.66666666666663" height="58.666666666666686"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="SQ1-OL-ZtP" firstAttribute="centerX" secondItem="5p4-gu-ta1" secondAttribute="centerX" id="9Tz-Vw-x32"/>
+                                    <constraint firstItem="SQ1-OL-ZtP" firstAttribute="centerY" secondItem="5p4-gu-ta1" secondAttribute="centerY" id="Dbb-5i-jox"/>
+                                    <constraint firstItem="SQ1-OL-ZtP" firstAttribute="width" secondItem="5p4-gu-ta1" secondAttribute="width" multiplier="1/2" id="PKB-NV-gp5"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5p4-gu-ta1" firstAttribute="leading" secondItem="H42-jS-FtC" secondAttribute="leading" id="4O1-Re-PY4"/>
+                            <constraint firstItem="H42-jS-FtC" firstAttribute="trailing" secondItem="5p4-gu-ta1" secondAttribute="trailing" id="gSv-eT-wSX"/>
+                            <constraint firstItem="5p4-gu-ta1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="m4n-FC-krH"/>
+                            <constraint firstAttribute="bottom" secondItem="5p4-gu-ta1" secondAttribute="bottom" id="oLb-0O-LuG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="H42-jS-FtC"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="2yo-P6-vIt"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="25.862068965517242"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ZfZ-pN-Dxg">
+            <objects>
+                <navigationController storyboardIdentifier="MainNavigationID" id="5oa-Iz-ODM" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="rYC-ld-ffz">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="9f4-BL-KfA" kind="relationship" relationship="rootViewController" id="4Z1-N2-Vmt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eYx-bY-14S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1134" y="26"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="hVx-fo-dvr">
+            <objects>
+                <viewController id="9f4-BL-KfA" customClass="MainViewController" customModule="Fly365" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4s5-b7-7k8" customClass="MyView" customModule="Fly365" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rx7-uX-BBg">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="690"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="labelText" value="Shafeek"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="arrival_flight"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="b4p-dF-QNG" firstAttribute="trailing" secondItem="Rx7-uX-BBg" secondAttribute="trailing" id="RsI-ZA-4Id"/>
+                            <constraint firstItem="b4p-dF-QNG" firstAttribute="bottom" secondItem="Rx7-uX-BBg" secondAttribute="bottom" id="Wyd-bo-R13"/>
+                            <constraint firstItem="Rx7-uX-BBg" firstAttribute="leading" secondItem="b4p-dF-QNG" secondAttribute="leading" id="aML-2L-mO2"/>
+                            <constraint firstItem="Rx7-uX-BBg" firstAttribute="top" secondItem="b4p-dF-QNG" secondAttribute="top" id="cnc-fe-LZf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="b4p-dF-QNG"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="AZh-Gw-ktA"/>
+                    <connections>
+                        <outlet property="mainView" destination="Rx7-uX-BBg" id="W2M-7L-ceI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oLr-am-r9R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2033" y="26"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrival_flight" width="12.666666984558105" height="12.666666984558105"/>
+        <image name="logo" width="106.66666412353516" height="58.666667938232422"/>
+    </resources>
+</document>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="AircraftCell" customModule="Fly365" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0de-Qm-Kfd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qNn-5D-IAc" customClass="CheckBoxView" customModule="Fly365" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="221" height="43.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="labelText" value="All"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Only" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="521-fg-cvN" customClass="MyLabel" customModule="Fly365" customModuleProvider="target">
+                                <rect key="frame" x="290" y="13.5" width="30" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="stZ-R4-irH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="kVe-Qa-dLl">
+                                <rect key="frame" x="231" y="6.5" width="51" height="31"/>
+                                <color key="onTintColor" red="0.12156862745098039" green="0.1764705882352941" blue="0.29411764705882354" alpha="1" colorSpace="calibratedRGB"/>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="521-fg-cvN" secondAttribute="trailing" id="4qm-uH-C70"/>
+                            <constraint firstItem="qNn-5D-IAc" firstAttribute="top" secondItem="0de-Qm-Kfd" secondAttribute="top" id="90o-Th-GSm"/>
+                            <constraint firstItem="521-fg-cvN" firstAttribute="leading" secondItem="kVe-Qa-dLl" secondAttribute="trailing" constant="10" id="Dmw-NH-Muc"/>
+                            <constraint firstItem="kVe-Qa-dLl" firstAttribute="centerY" secondItem="0de-Qm-Kfd" secondAttribute="centerY" id="HZI-cq-wfb"/>
+                            <constraint firstItem="qNn-5D-IAc" firstAttribute="leading" secondItem="0de-Qm-Kfd" secondAttribute="leading" id="RVY-EU-ybY"/>
+                            <constraint firstItem="kVe-Qa-dLl" firstAttribute="leading" secondItem="qNn-5D-IAc" secondAttribute="trailing" constant="10" id="SSa-Kq-1we"/>
+                            <constraint firstItem="qNn-5D-IAc" firstAttribute="centerY" secondItem="0de-Qm-Kfd" secondAttribute="centerY" id="chC-rt-WdA"/>
+                            <constraint firstItem="521-fg-cvN" firstAttribute="centerY" secondItem="0de-Qm-Kfd" secondAttribute="centerY" id="hje-uy-KQf"/>
+                            <constraint firstAttribute="bottom" secondItem="qNn-5D-IAc" secondAttribute="bottom" id="mJh-IZ-yjn"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="0de-Qm-Kfd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="GQY-2C-D6d"/>
+                    <constraint firstAttribute="trailing" secondItem="0de-Qm-Kfd" secondAttribute="trailing" id="V0e-uc-GBq"/>
+                    <constraint firstAttribute="bottom" secondItem="0de-Qm-Kfd" secondAttribute="bottom" id="tj5-6Q-x6Y"/>
+                    <constraint firstItem="0de-Qm-Kfd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="tsh-DM-vuX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="aircraftCheckBox" destination="qNn-5D-IAc" id="bHq-LD-Vtg"/>
+                <outlet property="aircraftSwitch" destination="kVe-Qa-dLl" id="0Kd-JT-pKS"/>
+                <outlet property="bgView" destination="0de-Qm-Kfd" id="C7B-ge-Brh"/>
+                <outlet property="onlyLabel" destination="521-fg-cvN" id="0CP-F9-cxx"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

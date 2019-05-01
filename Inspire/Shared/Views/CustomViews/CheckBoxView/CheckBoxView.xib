@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CheckBoxView">
+            <connections>
+                <outlet property="button" destination="GRZ-d7-505" id="Y0J-dB-Ids"/>
+                <outlet property="label" destination="hgP-UB-gh7" id="U16-qo-PSJ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="102"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HnS-xH-MJV">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="102"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GRZ-d7-505" customClass="MyButton" customModule="Inspire" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="41" width="20" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="1Kw-cd-5Xb"/>
+                                <constraint firstAttribute="width" constant="20" id="5n7-x3-qCh"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="checkBox" value="YES"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isChecked" value="NO"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="0.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                    <real key="value" value="2"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="0.50196078431372548" green="0.50196078431372548" blue="0.50588235294117645" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hgP-UB-gh7" customClass="MyLabel" customModule="Inspire" customModuleProvider="target">
+                            <rect key="frame" x="30" y="42.5" width="345" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                    <color key="value" red="0.13725490200000001" green="0.1215686275" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="hgP-UB-gh7" firstAttribute="centerY" secondItem="HnS-xH-MJV" secondAttribute="centerY" id="CkC-Id-uqD"/>
+                        <constraint firstAttribute="trailing" secondItem="hgP-UB-gh7" secondAttribute="trailing" id="FFE-QB-nWN"/>
+                        <constraint firstItem="GRZ-d7-505" firstAttribute="centerY" secondItem="HnS-xH-MJV" secondAttribute="centerY" id="GWE-pM-PSm"/>
+                        <constraint firstItem="GRZ-d7-505" firstAttribute="leading" secondItem="HnS-xH-MJV" secondAttribute="leading" id="TNt-F7-hxw"/>
+                        <constraint firstItem="hgP-UB-gh7" firstAttribute="leading" secondItem="GRZ-d7-505" secondAttribute="trailing" constant="10" id="xcE-d1-Hyw"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="HnS-xH-MJV" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="AfI-pT-FOa"/>
+                <constraint firstItem="HnS-xH-MJV" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="SDw-e4-dPf"/>
+                <constraint firstItem="HnS-xH-MJV" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="eRq-g0-fKy"/>
+                <constraint firstItem="HnS-xH-MJV" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="xYU-P2-WW8"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="138.40000000000001" y="-100.74962518740631"/>
+        </view>
+    </objects>
+</document>

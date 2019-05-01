@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="515" id="KGk-i7-Jjw" customClass="RoundTripCell" customModule="Inspire" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="515"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="514.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pk9-u5-P4z" customClass="MyView" customModule="Inspire" customModuleProvider="target">
+                        <rect key="frame" x="5" y="5" width="310" height="504.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CZj-9b-Sdt" customClass="LabelImageView" customModule="Inspire" customModuleProvider="target">
+                                <rect key="frame" x="15" y="15" width="280" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="otU-qY-qYq"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="labelText" value="Departure"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="departure_flight"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="imageIcon" value="departure_flight"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LXT-cs-Hes" customClass="LabelImageView" customModule="Inspire" customModuleProvider="target">
+                                <rect key="frame" x="15" y="67" width="280" height="37"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="labelText" value="Arrival"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="arrival_flight"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="imageIcon" value="arrival_flight"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WBD-y3-Mk5" customClass="LabelImageView" customModule="Inspire" customModuleProvider="target">
+                                <rect key="frame" x="15" y="119" width="280" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="TpO-pi-70r"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="labelText" value="Passengers"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="imageIcon" value="bottom_arrow"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DCf-5H-eJB" customClass="LabelImageView" customModule="Inspire" customModuleProvider="target">
+                                <rect key="frame" x="15" y="171" width="280" height="37"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="labelText" value="Departure Date"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="calendar"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="imageIcon" value="calendar"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IDx-SY-MN3" customClass="LabelImageView" customModule="Inspire" customModuleProvider="target">
+                                <rect key="frame" x="15" y="223" width="280" height="37"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="labelText" value="Arrival Date"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="calendar"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="imageIcon" value="calendar"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G6Z-oc-vEj" customClass="LabelImageView" customModule="Inspire" customModuleProvider="target">
+                                <rect key="frame" x="15" y="275" width="280" height="37"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="labelText" value="Cabin Class"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="imageIcon" value="bottom_arrow"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tsv-Wm-wvu" customClass="CheckBoxView" customModule="Inspire" customModuleProvider="target">
+                                <rect key="frame" x="15" y="327" width="280" height="37"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="labelText" value="flexible_dates"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r4z-at-8mX" customClass="CheckBoxView" customModule="Inspire" customModuleProvider="target">
+                                <rect key="frame" x="15" y="364" width="280" height="37"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="labelText" value="direct_flights"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="WBD-y3-Mk5" firstAttribute="top" secondItem="LXT-cs-Hes" secondAttribute="bottom" constant="15" id="7F0-7r-5ZZ"/>
+                            <constraint firstItem="Tsv-Wm-wvu" firstAttribute="top" secondItem="G6Z-oc-vEj" secondAttribute="bottom" constant="15" id="9VZ-0r-qmT"/>
+                            <constraint firstItem="IDx-SY-MN3" firstAttribute="height" secondItem="CZj-9b-Sdt" secondAttribute="height" id="9c4-te-ShF"/>
+                            <constraint firstItem="r4z-at-8mX" firstAttribute="leading" secondItem="pk9-u5-P4z" secondAttribute="leading" constant="15" id="9kf-1H-VgK"/>
+                            <constraint firstItem="IDx-SY-MN3" firstAttribute="top" secondItem="DCf-5H-eJB" secondAttribute="bottom" constant="15" id="9lt-Kk-TLn"/>
+                            <constraint firstItem="LXT-cs-Hes" firstAttribute="top" secondItem="CZj-9b-Sdt" secondAttribute="bottom" constant="15" id="Avh-r4-yya"/>
+                            <constraint firstAttribute="trailing" secondItem="WBD-y3-Mk5" secondAttribute="trailing" constant="15" id="DC7-5A-TkV"/>
+                            <constraint firstItem="Tsv-Wm-wvu" firstAttribute="leading" secondItem="pk9-u5-P4z" secondAttribute="leading" constant="15" id="EXa-Ku-NkI"/>
+                            <constraint firstItem="G6Z-oc-vEj" firstAttribute="leading" secondItem="pk9-u5-P4z" secondAttribute="leading" constant="15" id="JWW-oh-tTS"/>
+                            <constraint firstAttribute="trailing" secondItem="G6Z-oc-vEj" secondAttribute="trailing" constant="15" id="Kct-1e-0eZ"/>
+                            <constraint firstAttribute="trailing" secondItem="DCf-5H-eJB" secondAttribute="trailing" constant="15" id="M2j-ZT-Lpd"/>
+                            <constraint firstItem="DCf-5H-eJB" firstAttribute="height" secondItem="CZj-9b-Sdt" secondAttribute="height" id="M8O-S8-pIY"/>
+                            <constraint firstAttribute="trailing" secondItem="IDx-SY-MN3" secondAttribute="trailing" constant="15" id="Mg2-YA-eXA"/>
+                            <constraint firstAttribute="trailing" secondItem="CZj-9b-Sdt" secondAttribute="trailing" constant="15" id="V1u-Rd-A9N"/>
+                            <constraint firstItem="WBD-y3-Mk5" firstAttribute="leading" secondItem="pk9-u5-P4z" secondAttribute="leading" constant="15" id="WiU-fP-afj"/>
+                            <constraint firstItem="DCf-5H-eJB" firstAttribute="leading" secondItem="pk9-u5-P4z" secondAttribute="leading" constant="15" id="YhJ-E3-ING"/>
+                            <constraint firstItem="DCf-5H-eJB" firstAttribute="top" secondItem="WBD-y3-Mk5" secondAttribute="bottom" constant="15" id="cG8-Vo-zug"/>
+                            <constraint firstItem="r4z-at-8mX" firstAttribute="height" secondItem="CZj-9b-Sdt" secondAttribute="height" id="cnc-V5-yqz"/>
+                            <constraint firstAttribute="trailing" secondItem="LXT-cs-Hes" secondAttribute="trailing" constant="15" id="dbA-b3-Ywj"/>
+                            <constraint firstItem="G6Z-oc-vEj" firstAttribute="top" secondItem="IDx-SY-MN3" secondAttribute="bottom" constant="15" id="eqr-0K-KWF"/>
+                            <constraint firstItem="LXT-cs-Hes" firstAttribute="height" secondItem="CZj-9b-Sdt" secondAttribute="height" id="huL-iX-rSL"/>
+                            <constraint firstItem="LXT-cs-Hes" firstAttribute="leading" secondItem="pk9-u5-P4z" secondAttribute="leading" constant="15" id="lbv-GD-yov"/>
+                            <constraint firstItem="r4z-at-8mX" firstAttribute="top" secondItem="Tsv-Wm-wvu" secondAttribute="bottom" id="mgV-HV-kvq"/>
+                            <constraint firstItem="CZj-9b-Sdt" firstAttribute="top" secondItem="pk9-u5-P4z" secondAttribute="top" constant="15" id="pI5-wf-hIq"/>
+                            <constraint firstAttribute="trailing" secondItem="Tsv-Wm-wvu" secondAttribute="trailing" constant="15" id="qpH-I1-bKa"/>
+                            <constraint firstItem="CZj-9b-Sdt" firstAttribute="leading" secondItem="pk9-u5-P4z" secondAttribute="leading" constant="15" id="rXf-pD-qyO"/>
+                            <constraint firstItem="IDx-SY-MN3" firstAttribute="leading" secondItem="pk9-u5-P4z" secondAttribute="leading" constant="15" id="syA-MM-o31"/>
+                            <constraint firstAttribute="trailing" secondItem="r4z-at-8mX" secondAttribute="trailing" constant="15" id="te4-OZ-eFu"/>
+                            <constraint firstItem="G6Z-oc-vEj" firstAttribute="height" secondItem="CZj-9b-Sdt" secondAttribute="height" id="tkT-2A-Q6s"/>
+                            <constraint firstItem="Tsv-Wm-wvu" firstAttribute="height" secondItem="CZj-9b-Sdt" secondAttribute="height" id="x2c-Gj-O0M"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="radiusBorder" value="NO"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="shadow" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="pk9-u5-P4z" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="9qw-GA-mfv"/>
+                    <constraint firstAttribute="bottom" secondItem="pk9-u5-P4z" secondAttribute="bottom" constant="5" id="Ecv-Qs-uPa"/>
+                    <constraint firstAttribute="trailing" secondItem="pk9-u5-P4z" secondAttribute="trailing" constant="5" id="RV0-hL-nII"/>
+                    <constraint firstItem="pk9-u5-P4z" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="xPv-Ka-t3f"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="arrivalDateView" destination="IDx-SY-MN3" id="4QP-cZ-bpb"/>
+                <outlet property="arrivalView" destination="LXT-cs-Hes" id="jgZ-nW-Pf8"/>
+                <outlet property="cabinClassView" destination="G6Z-oc-vEj" id="Jsv-D2-IkT"/>
+                <outlet property="departureDateView" destination="DCf-5H-eJB" id="Ces-Bf-iH1"/>
+                <outlet property="departureView" destination="CZj-9b-Sdt" id="eK0-tv-ao1"/>
+                <outlet property="directFlightsCB" destination="r4z-at-8mX" id="dCa-5e-p89"/>
+                <outlet property="flexibleDatesCB" destination="Tsv-Wm-wvu" id="hqW-ln-FTt"/>
+                <outlet property="passengersView" destination="WBD-y3-Mk5" id="aBQ-li-eg3"/>
+            </connections>
+            <point key="canvasLocation" x="78.400000000000006" y="158.32083958020991"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrival_flight" width="12.5" height="12.5"/>
+        <image name="bottom_arrow" width="18" height="18"/>
+        <image name="calendar" width="11.5" height="12.5"/>
+        <image name="departure_flight" width="12.5" height="12.5"/>
+    </resources>
+</document>
